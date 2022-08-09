@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Coffee Survey</title>
+
+  </head>
+  <body>
+
+  <div class="coffeeSurveyForm">
+    <h1 id="title">Coffee Survey</h1>
+    <p id="description">Coffee Survey form</p>
+  <form id="survey-form">
+    <label for="name" id="name-label"><strong>Name</strong></label><br>
+    <input type="text" name="name" id="name" placeholder=" Enter your name" required><br>
+    <label for="email" id="email-label"><strong>Email</strong></label><br>
+    <input type="email" name="email" id="email" placeholder=" Enter your email" required><br>
+    <label for="number" id="number-label"><strong>Age(optional)</strong></label><br>
+    <input type="number" name="number" id="number" placeholder=" Age" min="10" max="120"><br>
+
+    <label id="dropdown-label" for="dropdown"><strong>How often do you drink coffee?</strong></label><br>
+    <select  name="drink-coffee" id="dropdown" required>
+      <option value="" disabled selected>Please select</option>
+      <option>Daily</option>
+      <option>Weekly</option>
+      <option>Monthly</option>
+      <option>Occationaly</option>
+      <option>Never</option>
+    </select><br>
+
+    <label id="dropdown-label" for="dropdown"><strong>Approximately how many years have you been a coffee drinker?</strong></label><br>
+    <select name="years" id="dropdown" required>
+      <option value="" disabled selected>Please select</option>
+      <option>Less than a year</option>
+      <option>1-2 years</option>
+      <option>3-4 years</option>
+      <option>more than 4 years</option>
+    </select><br>
+
+    <fieldset class="drink_coffee">
+    <p><strong>When do you usually drink coffee?</strong></p>
+    <input type="checkbox" name="morning" id="morning" value="Morning">
+    <label id="checkbox" for="morning">Morning</label><br>
+    <input type="checkbox" name="noon" id="noon" value="Noon">
+    <label id="checkbox" for="noon">Noon</label><br>
+    <input type="checkbox" name="evening" id="evening" value="Evening">
+    <label id="checkbox" for="evening">Evening</label><br>
+    <input type="checkbox" name="night" id="night" value="Night">
+    <label id="checkbox"for="night">Night</label><br>
+    </fieldset>
+
+  <fieldset class="fav_coffee">
+    <p><strong>What is your favorite coffee drink?</strong></p>
+    <input type="radio" name="fav_coffee" id="brewed_coffee" value="Brewed coffee">
+    <label for="brewed_coffee">Brewed coffee</label><br>
+    <input type="radio" name="fav_coffee" id="espresso_coffee" value="Espresso">
+    <label for="espresso_coffee">Espresso</label><br>
+    <input type="radio" name="fav_coffee" id="cappucino_coffee" value="Cappucino">
+    <label for="cappucino_coffee">Cappucino</label><br>
+    <input type="radio" name="fav_coffee" id="latte_coffee" value="Latte">
+    <label for="latte_coffee">Latte</label><br>
+    <input type="radio" name="fav_coffee" id="iced_coffee" value="Iced Coffee">
+    <label for="iced_coffee">Iced Coffee</label><br>
+    <input type="radio" name="fav_coffee" id="cold_brew" value="Cold brew">
+    <label for="cold_brew">Cold brew</label><br>
+  </fieldset>
+
+  <label for="suggestions" id="suggestions-label"><strong>Any comments or suggestions?</strong></label><br>
+  <textarea id="suggestions" placeholder="Enter your comment here..."></textarea><br>
+    
+  <input id="submit" type="submit" value="Submit">
+  </form>
+  <br>
+  </div>
+  </body>
+</html>
